@@ -17,16 +17,11 @@
 -- Notes:
 --      - Set variables in head of script (below these comments) 
 --
--- Author: Lasse Jenssen, lasse.jenssen@evry.com
--- Date:  20 Nov 2013
+-- Author: Lasse Jenssen, lasse.jenssen@eritec.com
+-- Date:  01 May 2018
 --
--- Version: 1.3
+-- Version: 1.0
 --
--- History
---    01.feb 2013 - v1.0: Initial script (for testing)
---    12.jan 2014 - v1.1: First official release
---    24.apr 2014 - v1.2: Added Atomikos support
---    21.may 2015 - v1.3: Support for Oracle versions
 -- -------------------------------------------------------------------
  
 -- -------------------------------------------------------------------
