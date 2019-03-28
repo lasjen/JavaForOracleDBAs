@@ -1,0 +1,541 @@
+
+TKPROF: Release 12.2.0.1.0 - Development on Fri Mar 22 04:54:19 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Trace file: CDBORCL_ora_1304_20190319190238.trc
+Sort options: default
+
+********************************************************************************
+count    = number of times OCI procedure was executed
+cpu      = cpu time in seconds executing 
+elapsed  = elapsed time in seconds executing
+disk     = number of physical reads of buffers from disk
+query    = number of buffers gotten for consistent read
+current  = number of buffers gotten in current mode (usually for update)
+rows     = number of rows processed by the fetch or execute call
+********************************************************************************
+
+select
+ 'NUMBER' as type_name, 2 as data_type, 38 as precision,
+ NULL as literal_prefix, NULL as literal_suffix, NULL as create_params,
+ 1 as nullable, 0 as case_sensitive, 3 as searchable,
+ 0 as unsigned_attribute, 1 as fixed_prec_scale, 0 as auto_increment,
+ 'NUMBER' as local_type_name, -84 as minimum_scale, 127 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'CHAR' as type_name, 1 as data_type, 2000 as precision,
+ '''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 1 as case_sensitive, 3 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'CHAR' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'NCHAR' as type_name, -15 as data_type, 2000 as precision,
+ '''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 1 as case_sensitive, 3 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'NCHAR' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'VARCHAR2' as type_name, 12 as data_type, 32767 as precision,
+ '''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 1 as case_sensitive, 3 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'VARCHAR2' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'NVARCHAR2' as type_name, -9 as data_type, 32766 as precision,
+ '''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 1 as case_sensitive, 3 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'nVARCHAR2' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'DATE' as type_name, 93as data_type, 7 as precision,
+ 'DATE ''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 0 as case_sensitive, 3 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'DATE' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'DATE' as type_name, 92 as data_type, 7 as precision,
+ 'DATE ''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 0 as case_sensitive, 3 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'DATE' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'TIMESTAMP' as type_name, 93 as data_type, 11 as precision,
+ 'TIMESTAMP ''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 0 as case_sensitive, 3 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'TIMESTAMP' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'TIMESTAMP WITH TIME ZONE' as type_name, -101 as data_type, 13 as precision,
+ 'TIMESTAMP ''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 0 as case_sensitive, 3 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'TIMESTAMP WITH TIME ZONE' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'TIMESTAMP WITH LOCAL TIME ZONE' as type_name, -102 as data_type, 11 as precision,
+ 'TIMESTAMP ''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 0 as case_sensitive, 3 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'TIMESTAMP WITH LOCAL TIME ZONE' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'INTERVALYM' as type_name, -103 as data_type, 5 as precision,
+ 'INTERVAL ''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 0 as case_sensitive, 3 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'INTERVALYM' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'INTERVALDS' as type_name, -104 as data_type, 4 as precision,
+ 'INTERVAL ''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 0 as case_sensitive, 3 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'INTERVALDS' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'RAW' as type_name, -3 as data_type, 32767 as precision,
+ '''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 0 as case_sensitive, 3 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'RAW' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'LONG' as type_name, -1 as data_type, 2147483647 as precision,
+ '''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 1 as case_sensitive, 0 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'LONG' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'LONG RAW' as type_name, -4 as data_type, 2147483647 as precision,
+ '''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 0 as case_sensitive, 0 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'LONG RAW' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select 'NUMBER' as type_name, -7 as data_type, 1 as precision,
+NULL as literal_prefix, NULL as literal_suffix, 
+'(1)' as create_params, 1 as nullable, 0 as case_sensitive, 3 as searchable,
+0 as unsigned_attribute, 1 as fixed_prec_scale, 0 as auto_increment,
+'NUMBER' as local_type_name, -84 as minimum_scale, 127 as maximum_scale,
+NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select 'NUMBER' as type_name, -6 as data_type, 3 as precision,
+NULL as literal_prefix, NULL as literal_suffix, 
+'(3)' as create_params, 1 as nullable, 0 as case_sensitive, 3 as searchable,
+0 as unsigned_attribute, 1 as fixed_prec_scale, 0 as auto_increment,
+'NUMBER' as local_type_name, -84 as minimum_scale, 127 as maximum_scale,
+NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select 'NUMBER' as type_name, 5 as data_type, 5 as precision,
+NULL as literal_prefix, NULL as literal_suffix, 
+'(5)' as create_params, 1 as nullable, 0 as case_sensitive, 3 as searchable,
+0 as unsigned_attribute, 1 as fixed_prec_scale, 0 as auto_increment,
+'NUMBER' as local_type_name, -84 as minimum_scale, 127 as maximum_scale,
+NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select 'NUMBER' as type_name, 4 as data_type, 10 as precision,
+NULL as literal_prefix, NULL as literal_suffix, 
+'(10)' as create_params, 1 as nullable, 0 as case_sensitive, 3 as searchable,
+0 as unsigned_attribute, 1 as fixed_prec_scale, 0 as auto_increment,
+'NUMBER' as local_type_name, -84 as minimum_scale, 127 as maximum_scale,
+NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select 'NUMBER' as type_name, -5 as data_type, 38 as precision,
+NULL as literal_prefix, NULL as literal_suffix, 
+NULL as create_params, 1 as nullable, 0 as case_sensitive, 3 as searchable,
+0 as unsigned_attribute, 1 as fixed_prec_scale, 0 as auto_increment,
+'NUMBER' as local_type_name, -84 as minimum_scale, 127 as maximum_scale,
+NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select 'FLOAT' as type_name, 6 as data_type, 63 as precision,
+NULL as literal_prefix, NULL as literal_suffix, 
+NULL as create_params, 1 as nullable, 0 as case_sensitive, 3 as searchable,
+0 as unsigned_attribute, 1 as fixed_prec_scale, 0 as auto_increment,
+'FLOAT' as local_type_name, -84 as minimum_scale, 127 as maximum_scale,
+NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select 'REAL' as type_name, 7 as data_type, 63 as precision,
+NULL as literal_prefix, NULL as literal_suffix, 
+NULL as create_params, 1 as nullable, 0 as case_sensitive, 3 as searchable,
+0 as unsigned_attribute, 1 as fixed_prec_scale, 0 as auto_increment,
+'REAL' as local_type_name, -84 as minimum_scale, 127 as maximum_scale,
+NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'BLOB' as type_name, 2004 as data_type, -1 as precision,
+ null as literal_prefix, null as literal_suffix, NULL as create_params,
+ 1 as nullable, 0 as case_sensitive, 0 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'BLOB' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'CLOB' as type_name, 2005 as data_type, -1 as precision,
+ '''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 1 as case_sensitive, 0 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'CLOB' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'NCLOB' as type_name, 2011 as data_type, -1 as precision,
+ '''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 1 as case_sensitive, 0 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'NCLOB' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'REF' as type_name, 2006 as data_type, 0 as precision,
+ '''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 1 as case_sensitive, 0 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'REF' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'ARRAY' as type_name, 2003 as data_type, 0 as precision,
+ '''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 1 as case_sensitive, 0 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'ARRAY' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+union select
+ 'STRUCT' as type_name, 2002 as data_type, 0 as precision,
+ '''' as literal_prefix, '''' as literal_suffix, NULL as create_params,
+ 1 as nullable, 1 as case_sensitive, 0 as searchable,
+ 0 as unsigned_attribute, 0 as fixed_prec_scale, 0 as auto_increment,
+ 'STRUCT' as local_type_name, 0 as minimum_scale, 0 as maximum_scale,
+ NULL as sql_data_type, NULL as sql_datetime_sub, 10 as num_prec_radix
+from dual
+order by data_type
+
+call     count       cpu    elapsed       disk      query    current        rows
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+Parse        2      0.00       0.00          0          0          0           0
+Execute      2      0.00       0.00          0          0          0           0
+Fetch        6      0.00       0.00          0          0          0          56
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+total       10      0.00       0.00          0          0          0          56
+
+Misses in library cache during parse: 0
+Optimizer mode: ALL_ROWS
+Parsing user id: 109  
+Number of plan statistics captured: 1
+
+Rows (1st) Rows (avg) Rows (max)  Row Source Operation
+---------- ---------- ----------  ---------------------------------------------------
+        28         28         28  SORT UNIQUE (cr=0 pr=0 pw=0 time=119 us starts=1 cost=84 size=0 card=28)
+        28         28         28   UNION-ALL  (cr=0 pr=0 pw=0 time=95 us starts=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=1 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=1 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=1 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+         1          1          1    FAST DUAL  (cr=0 pr=0 pw=0 time=0 us starts=1 cost=2 size=0 card=1)
+
+
+Elapsed times include waiting on following events:
+  Event waited on                             Times   Max. Wait  Total Waited
+  ----------------------------------------   Waited  ----------  ------------
+  SQL*Net message to client                       6        0.00          0.00
+  SQL*Net message from client                     6        0.06          0.07
+********************************************************************************
+
+SQL ID: b4xr1nw5vtk2v Plan Hash: 1388734953
+
+SELECT SYS_CONTEXT('USERENV', 'CURRENT_SCHEMA') 
+FROM
+ DUAL
+
+
+call     count       cpu    elapsed       disk      query    current        rows
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+Parse        1      0.00       0.00          0          0          0           0
+Execute      1      0.00       0.00          0          0          0           0
+Fetch        1      0.00       0.00          0          0          0           1
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+total        3      0.00       0.00          0          0          0           1
+
+Misses in library cache during parse: 0
+Optimizer mode: ALL_ROWS
+Parsing user id: 109  
+Number of plan statistics captured: 1
+
+Rows (1st) Rows (avg) Rows (max)  Row Source Operation
+---------- ---------- ----------  ---------------------------------------------------
+         1          1          1  FAST DUAL  (cr=0 pr=0 pw=0 time=2 us starts=1 cost=2 size=0 card=1)
+
+
+Elapsed times include waiting on following events:
+  Event waited on                             Times   Max. Wait  Total Waited
+  ----------------------------------------   Waited  ----------  ------------
+  SQL*Net message to client                       1        0.00          0.00
+  SQL*Net message from client                     1        0.00          0.00
+********************************************************************************
+
+SQL ID: 9q8u8mufdbmay Plan Hash: 3047785809
+
+select bigtableex0_.id as id1_1_, bigtableex0_.status as status2_1_, 
+  bigtableex0_.timestamp as timestamp3_1_, bigtableex0_.created as 
+  created4_1_, bigtableex0_.data_object_id as data_object_id5_1_, 
+  bigtableex0_.generated as generated6_1_, bigtableex0_.secondary as 
+  secondary7_1_, bigtableex0_.temporary as temporary8_1_, 
+  bigtableex0_.last_ddl_time as last_ddl_time9_1_, bigtableex0_.object_id as 
+  object_id10_1_, bigtableex0_.object_name as object_name11_1_, 
+  bigtableex0_.object_type as object_type12_1_, bigtableex0_.owner as 
+  owner13_1_, bigtableex0_.subobject_name as subobject_name14_1_ 
+from
+ big_table_ext bigtableex0_
+
+
+call     count       cpu    elapsed       disk      query    current        rows
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+Parse        1      0.00       0.00          0         29         12           0
+Execute      1      0.00       0.00          0          0          0           0
+Fetch     1001      0.00       0.04          0       1135          4       10000
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+total     1003      0.00       0.04          0       1164         16       10000
+
+Misses in library cache during parse: 1
+Optimizer mode: ALL_ROWS
+Parsing user id: 109  
+Number of plan statistics captured: 1
+
+Rows (1st) Rows (avg) Rows (max)  Row Source Operation
+---------- ---------- ----------  ---------------------------------------------------
+     10000      10000      10000  TABLE ACCESS FULL BIG_TABLE_EXT (cr=1135 pr=0 pw=0 time=20458 us starts=1 cost=42 size=990000 card=10000)
+
+
+Elapsed times include waiting on following events:
+  Event waited on                             Times   Max. Wait  Total Waited
+  ----------------------------------------   Waited  ----------  ------------
+  PGA memory operation                            3        0.00          0.00
+  SQL*Net message to client                    1001        0.00          0.00
+  log file sync                                   1        0.00          0.00
+  SQL*Net message from client                  1001        0.04          1.01
+********************************************************************************
+
+SQL ID: 4x5ac8bsmajfg Plan Hash: 498549126
+
+select bigtable0_.id as id1_0_0_, bigtable0_.status as status2_0_0_, 
+  bigtable0_.timestamp as timestamp3_0_0_, bigtable0_.created as 
+  created4_0_0_, bigtable0_.data_object_id as data_object_id5_0_0_, 
+  bigtable0_.generated as generated6_0_0_, bigtable0_.secondary as 
+  secondary7_0_0_, bigtable0_.temporary as temporary8_0_0_, 
+  bigtable0_.last_ddl_time as last_ddl_time9_0_0_, bigtable0_.object_id as 
+  object_id10_0_0_, bigtable0_.object_name as object_name11_0_0_, 
+  bigtable0_.object_type as object_type12_0_0_, bigtable0_.owner as 
+  owner13_0_0_, bigtable0_.subobject_name as subobject_name14_0_0_ 
+from
+ big_table bigtable0_ where bigtable0_.id=:1 
+
+
+call     count       cpu    elapsed       disk      query    current        rows
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+Parse    10000      0.00       0.20          0          0          0           0
+Execute  10000      0.00       0.73          0          0          0           0
+Fetch    10000      0.01       0.11          0      19437          0           0
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+total    30000      0.01       1.05          0      19437          0           0
+
+Misses in library cache during parse: 2
+Misses in library cache during execute: 2
+Optimizer mode: ALL_ROWS
+Parsing user id: 109  
+Number of plan statistics captured: 4
+
+Rows (1st) Rows (avg) Rows (max)  Row Source Operation
+---------- ---------- ----------  ---------------------------------------------------
+         0          0          0  TABLE ACCESS BY INDEX ROWID BIG_TABLE (cr=1 pr=0 pw=0 time=8 us starts=1 cost=0 size=953 card=1)
+         0          0          0   INDEX UNIQUE SCAN BIG_TABLE_PK (cr=1 pr=0 pw=0 time=6 us starts=0 cost=0 size=0 card=1)(object id 74966)
+
+
+Elapsed times include waiting on following events:
+  Event waited on                             Times   Max. Wait  Total Waited
+  ----------------------------------------   Waited  ----------  ------------
+  SQL*Net message to client                   10000        0.00          0.00
+  SQL*Net message from client                 10000        0.01          6.92
+********************************************************************************
+
+SQL ID: dkp0yt0wy0z4s Plan Hash: 3728992054
+
+select big_table_seq.nextval 
+from
+ dual
+
+
+call     count       cpu    elapsed       disk      query    current        rows
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+Parse    10000      0.00       0.13          0          0          0           0
+Execute  10000      0.00       0.24          0          0          0           0
+Fetch    10000      0.02       0.16          0          0        100       10000
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+total    30000      0.02       0.53          0          0        100       10000
+
+Misses in library cache during parse: 1
+Optimizer mode: ALL_ROWS
+Parsing user id: 109  
+Number of plan statistics captured: 3
+
+Rows (1st) Rows (avg) Rows (max)  Row Source Operation
+---------- ---------- ----------  ---------------------------------------------------
+         1          1          1  SEQUENCE  BIG_TABLE_SEQ (cr=0 pr=0 pw=0 time=655 us starts=1)
+         1          1          1   FAST DUAL  (cr=0 pr=0 pw=0 time=1 us starts=1 cost=2 size=0 card=1)
+
+
+Elapsed times include waiting on following events:
+  Event waited on                             Times   Max. Wait  Total Waited
+  ----------------------------------------   Waited  ----------  ------------
+  SQL*Net message to client                   10000        0.00          0.00
+  log file sync                                 100        0.03          0.08
+  SQL*Net message from client                 10000        0.01          8.08
+********************************************************************************
+
+SQL ID: 28rygrvw16jxr Plan Hash: 0
+
+insert into big_table (status, timestamp, created, data_object_id, generated, 
+  secondary, temporary, last_ddl_time, object_id, object_name, object_type, 
+  owner, subobject_name, id) 
+values
+ (:1 , :2 , :3 , :4 , :5 , :6 , :7 , :8 , :9 , :10 , :11 , :12 , :13 , :14 )
+ 
+call     count       cpu    elapsed       disk      query    current        rows
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+Parse    10000      0.00       0.14          0          0          0           0
+Execute  10000      0.41       5.00          0        988      61975       10000
+Fetch        0      0.00       0.00          0          0          0           0
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+total    20000      0.41       5.14          0        988      61975       10000
+
+Misses in library cache during parse: 1
+Misses in library cache during execute: 5
+Optimizer mode: ALL_ROWS
+Parsing user id: 109  
+Number of plan statistics captured: 16
+
+Rows (1st) Rows (avg) Rows (max)  Row Source Operation
+---------- ---------- ----------  ---------------------------------------------------
+         0          0          0  LOAD TABLE CONVENTIONAL  BIG_TABLE (cr=0 pr=0 pw=0 time=96 us starts=1)
+
+
+Elapsed times include waiting on following events:
+  Event waited on                             Times   Max. Wait  Total Waited
+  ----------------------------------------   Waited  ----------  ------------
+  Disk file operations I/O                        2        0.00          0.00
+  PGA memory operation                            1        0.00          0.00
+  log file sync                                  17        0.00          0.00
+  SQL*Net message to client                   10000        0.00          0.00
+  SQL*Net message from client                 10000        0.02          6.55
+
+
+
+********************************************************************************
+
+OVERALL TOTALS FOR ALL NON-RECURSIVE STATEMENTS
+
+call     count       cpu    elapsed       disk      query    current        rows
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+Parse    30004      0.00       0.48          0         29         12           0
+Execute  30004      0.41       5.97          0        988      61975       10000
+Fetch    21008      0.03       0.32          0      20572        104       20057
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+total    81016      0.44       6.79          0      21589      62091       30057
+
+Misses in library cache during parse: 5
+Misses in library cache during execute: 7
+
+Elapsed times include waiting on following events:
+  Event waited on                             Times   Max. Wait  Total Waited
+  ----------------------------------------   Waited  ----------  ------------
+  PGA memory operation                            5        0.00          0.00
+  SQL*Net message to client                   41015        0.00          0.02
+  SQL*Net message from client                 41015        0.66         32.73
+  SQL*Net more data from client                   2        0.00          0.00
+  asynch descriptor resize                        1        0.00          0.00
+  Disk file operations I/O                        3        0.00          0.00
+  log file sync                               10117        0.03          5.61
+
+
+OVERALL TOTALS FOR ALL RECURSIVE STATEMENTS
+
+call     count       cpu    elapsed       disk      query    current        rows
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+Parse       18      0.00       0.00          0          0          0           0
+Execute    155      0.02       0.05          0        132        277         126
+Fetch       26      0.00       0.00          0         62          0           9
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+total      199      0.02       0.06          0        194        277         135
+
+Misses in library cache during parse: 2
+Misses in library cache during execute: 2
+
+Elapsed times include waiting on following events:
+  Event waited on                             Times   Max. Wait  Total Waited
+  ----------------------------------------   Waited  ----------  ------------
+  PGA memory operation                            2        0.00          0.00
+
+   26  user  SQL statements in session.
+   19  internal SQL statements in session.
+   45  SQL statements in session.
+********************************************************************************
+Trace file: CDBORCL_ora_1304_20190319190238.trc
+Trace file compatibility: 12.2.0.0
+Sort options: default
+
+       1  session in tracefile.
+      26  user  SQL statements in trace file.
+      19  internal SQL statements in trace file.
+      45  SQL statements in trace file.
+      25  unique SQL statements in trace file.
+  991380  lines in trace file.
+      52  elapsed seconds in trace file.
+
+
